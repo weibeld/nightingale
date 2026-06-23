@@ -4,18 +4,18 @@ Explain the TTY subsystem in high-level terms.
 
 Part of the teminal series:
 
-1. [[1.article-ideas.terminal-control-commands]]
-2. [[1.article-ideas.the-tty-subsystem]]
-3. [[1.article-ideas.how-to-configure-a-tty-device]]
-4. [[1.article-ideas.how-to-use-terminal-control-commands]]
+1. [Terminal Control Commands](https://github.com/weibeld/writing/blob/main/drafts/terminal-control-commands/index.md)
+2. [The TTY Subsystem](https://github.com/weibeld/writing/blob/main/drafts/the-tty-subsystem/index.md)
+3. [How to Configure a TTY Device](https://github.com/weibeld/writing/blob/main/drafts/how-to-configure-a-tty-device/index.md)
+4. [How to Use Terminal Control Commands](https://github.com/weibeld/writing/blob/main/drafts/how-to-use-terminal-control-commands/index.md)
 
 ## Content
 
 #todo Transform the follwing into Shelf notes
 
 - History
-    - A physical terminal could be either in line mode or character mode (see [[2.box.terminal-character-mode-vs-line-mode]])
-    - The mode of the terminal could be set by the host through terminal control commands (see [[1.article-ideas.terminal-control-commands]])
+    - A physical terminal could be either in line mode or character mode (see [Terminal Character Mode vs Line Mode](https://github.com/weibeld/weibeld-notes/blob/main/notes/terminal-character-mode-vs-line-mode.md))
+    - The mode of the terminal could be set by the host through terminal control commands (see [Terminal Control Commands](https://github.com/weibeld/writing/blob/main/drafts/terminal-control-commands/index.md))
         - TODO: verify
     - Line mode: the terminal buffers characters internally and only sends the entire string to the host when Enter is pressed
         - Note: this is the reason that the [Enter key is called Enter](https://en.wikipedia.org/wiki/Enter_key#History) (IBM 3270 and 5250 have separate Enter and  Return keys)
@@ -34,7 +34,7 @@ Part of the teminal series:
     - The line editing component of the TTY subsystem is called [line discipline](https://en.wikipedia.org/wiki/Line_discipline)
         - The line discipline also works in the other direction: characters sent by the application back to the terminal may be transformed by the line discipline
             - For example, LF (which is used in UNIX as a line separator) is transformed to CR+LF before being sent to the terminal (or whatever line separator the  terminal expects)
-            - See [[2.box.carriage-return-and-line-feed-line-separators]]
+            - See [Carriage Return and Line Feed Line Separators](https://github.com/weibeld/weibeld-notes/blob/main/notes/carriage-return-and-line-feed-line-separators.md)
     - The TTY subsystem also provides other functionality, for example job and session control
         - This functionality is implemented in the TTY driver part of the TTY subsystem
         - The TTY driver component is a layer between the line discipline and the application

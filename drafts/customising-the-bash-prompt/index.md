@@ -10,4 +10,4 @@ Short article summarising and demonstrating the facilities for customising the B
 
 ## Resources
 
-- [[2.box.customising-the-bash-prompt]]
+- [Customising the Bash Prompt](https://github.com/weibeld/weibeld-notes/blob/main/notes/customising-the-bash-prompt.md)

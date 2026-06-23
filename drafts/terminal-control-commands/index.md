@@ -4,10 +4,10 @@ Demistify terminal control commands with a focus on the ANSI/VT100 commands (see
 
 Part of the teminal series:
 
-1. [[1.article-ideas.terminal-control-commands]]
-2. [[1.article-ideas.the-tty-subsystem]]
-3. [[1.article-ideas.how-to-configure-a-tty-device]]
-4. [[1.article-ideas.how-to-use-terminal-control-commands]]
+1. [Terminal Control Commands](https://github.com/weibeld/writing/blob/main/drafts/terminal-control-commands/index.md)
+2. [The TTY Subsystem](https://github.com/weibeld/writing/blob/main/drafts/the-tty-subsystem/index.md)
+3. [How to Configure a TTY Device](https://github.com/weibeld/writing/blob/main/drafts/how-to-configure-a-tty-device/index.md)
+4. [How to Use Terminal Control Commands](https://github.com/weibeld/writing/blob/main/drafts/how-to-use-terminal-control-commands/index.md)
 
 ## Content
 
@@ -65,4 +65,4 @@ Further topics that might be covered in separate articles are:
 - https://github.com/weibeld/figures/tree/master/misc/terminal-control.graffle
     - There are errors in the "Example" and "Escape Sequences" figures: terminal control commands are not entered through the keyboard
 - https://github.com/weibeld/figures/blob/master/misc/terminals.sketch
-- [[2.box.overview-terminals]]
+- [Index Terminals](https://github.com/weibeld/weibeld-notes/blob/main/notes/index-terminals.md)

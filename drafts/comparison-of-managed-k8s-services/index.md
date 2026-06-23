@@ -150,5 +150,3 @@ _Apr 7, 2020_
 ## Remarks
 
 ## Resources
-
-1. [[1.article-ideas.comparison-of-managed-k8s-services.dimensions]]: analysis for the comparison dimensions

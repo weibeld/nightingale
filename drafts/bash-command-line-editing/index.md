@@ -4,13 +4,13 @@ The Bash [command-line editing](https://www.gnu.org/software/bash/manual/bash.ht
 
 The idea of this article is to present the full line editing features of Bash, by however making it clear that these features are provided by Readline. Thus, a focus is put on clearly distinguishing which facilities are provided by Readline and which are provided by Bash.
 
-The article should also stress that, since Readline is used by various applications, the line editing features just learned also work for other applications that use Readline (see [[2.box.applications-that-use-gnu-readline]]).
+The article should also stress that, since Readline is used by various applications, the line editing features just learned also work for other applications that use Readline (see [Applications That Use GNU Readline](https://github.com/weibeld/weibeld-notes/blob/main/notes/applications-that-use-gnu-readline.md)).
 
 ## Content
 
-- Reference [[1.article-ideas.how-to-configure-a-tty-device]] which states that by default Bash sets the TTY to raw mode and does the line editing itself
+- Reference [How to Configure a TTY Device](https://github.com/weibeld/writing/blob/main/drafts/how-to-configure-a-tty-device/index.md) which states that by default Bash sets the TTY to raw mode and does the line editing itself
 - Introduce GNU Readline
-- List Readline features (see [[2.box.gnu-readline-line-editing-commands]]) and how they're used in Bash
+- List Readline features (see [GNU Readline Line Editing Commands](https://github.com/weibeld/weibeld-notes/blob/main/notes/gnu-readline-line-editing-commands.md)) and how they're used in Bash
     - Line editing
         - Default key sequences
         - Mention command arguments
@@ -39,7 +39,7 @@ The article should also stress that, since Readline is used by various applicati
         - Readline side
             - [Init file](https://www.gnu.org/software/bash/manual/bash.html#Readline-Init-File)
         - Bash side
-            - `bind` (see [[2.box.bash-bind-builtin]])
+            - `bind` (see [Bash bind Builtin](https://github.com/weibeld/weibeld-notes/blob/main/notes/bash-bind-builtin.md))
 - Useful configurations
 - Demonstrate difference between using `bind` and using a Readline init file
     - With `bind`, settings apply only to Bash, with Readline init file, settings apply to all apps that use Readline
@@ -52,8 +52,8 @@ The article should also stress that, since Readline is used by various applicati
 
 General:
 
-- [[2.box.gnu-readline-line-editing-commands]]
-- [[2.box.applications-that-use-gnu-readline]]
+- [GNU Readline Line Editing Commands](https://github.com/weibeld/weibeld-notes/blob/main/notes/gnu-readline-line-editing-commands.md)
+- [Applications That Use GNU Readline](https://github.com/weibeld/weibeld-notes/blob/main/notes/applications-that-use-gnu-readline.md)
 
 Completion: 
 
