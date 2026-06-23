@@ -41,5 +41,6 @@ Ideas for future write-ups are tracked in GitHub Issues, not in repository files
 
 ## Future work
 
+- Merging in legacy notes content: there is a set of old notes repositories (see the [Notes Repository Consolidation](https://github.com/users/weibeld/projects/69?pane=issue&itemId=202722447) project). There may be content that can be moved from these notes repositories to the files about the same topic in this repository. Also check whether other content may be transformed into a write-up in this repository.
 - Publishing pipeline: use this repoitory as the source for a publishing pipeline that publishes finsished write-ups to one or more destinations, like a website (e.g. through an SSG) or a platform like Medium. The publishing pipeline is read-only and the single source of truth of the write-ups remains in this repository.
 - Metadata extraction: extract metadata about write-ups, in particular the 'created' date and the 'last edited' date from the Git history (if necessary, use `git log --follow` to track directory renames)
