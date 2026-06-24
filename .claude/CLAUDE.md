@@ -2,15 +2,21 @@
 
 ## Current task
 
-- Combine my-journey-to-the-ideal-note-taking-app and the-desk-drawer-shelf-note-taking-method to a unified story about "My Personal Knowledge Management Saga/Odysee". Additional content is currently being prepared in the Owl project.
+> Note: the following syntax (@file) includes the specified file into context, see https://code.claude.com/docs/en/memory#import-additional-files.
 
-## About
+@TASK
+
+## Your role
+
+Your task is to assist the user in writing stories. It is intended that most of the actual content, and especially the final version, is written by the user. However, you should support the user in the processing of information and in ensuring adherence to the format requirements as well as the writing style preferences stated in this document.
+
+## About this repository
 
 Currently, Nightingale serves as a central location for developing, collecting and publishing stories.
 
 A story is any standalone text that may be published as, for example, an article.
 
-## Directory structure
+### Directory structure
 
 ```
 drafts/     # Work-in-progress stories
@@ -20,24 +26,52 @@ finished/   # Finished stories
 Each story in `drafts/` or `finished/` is a directory with the following structure:
 
 ```
-story-title/  # Title of the story in kebab-case
-  index.md       # Main content of the story
-  diagram.png    # Assets used by the story
+story-title/     # Internal identifier of the story
+  index.md       # Content of the story
+  aux.png        # Assets and other aux files used by the story
   ...
 ```
 
-Notes:
+Stories are started in the `drafts/` directory and moved to the `finished/` directory when they are finished and ready for publication.
 
-- When a story is finished and ready for publishing, it is moved from the `drafts/` directory to the `finished/` directory.
-- The directory name of a story may still change while it's in the `drafts/` directory, but it shouldn't change anymore when it's in the `finished/ directory.
-- The directory name of a story ideally corresponds to the story's title (as defined in `index.md`) in kebab-case. However, this is not a strict requirements, if, for example, the title is very long or the directory name differs just slightly from the title.
-- Some stories in `drafts/` do additionally contain a `metadata.legacy.yaml` file containing a "created" and "last updated" date. These dates have been taken from the previous legacy file format and are just included for completeness. It's not yet sure if these dates will be used at all, but in any case, these `metadata.legacy.yaml` should eventually be deleted.
+> Note: some stories in `drafts/` additionally contain a `metadata.legacy.yaml` file containing "created" and "last updated" dates. These are the dates from the previous legacy file formats and are just included for completeness. It's still to be determined whether these dates will be used at all. The `metadata.legacy.yaml` should eventually be deleted.
 
-## Structure of `index.md`
+## Format requirements
+
+### `index.md`
 
 - Pure Markdown, no YAML frontmatter
 - Starts with a `#` heading with the title of the story
-- References assets with relative paths (e.g. `./diagram.png`)
+- References assets with relative paths (e.g. `./aux.png`)
+
+### Story directory name
+
+- Kebab-case
+- Internal identifier of the story it contains
+- Ideally corresponds to the story title but deviations are allowed (e.g. if the story title is very long)
+- May be udpated (e.g. to more closely match the story title) for stories in the `drafts/` folder
+- Must not be updated for stories in the `finished/` folder
+
+## Writing
+
+Most of the actual writing is done by the user, but as an agent, you should ensure that the following preferences are followed where possible.
+
+### Writing style preferences
+
+- Write for an interested tech-savvy audience
+- Use clear chains of reasoning rather than fuzzy clouds of observations
+- Prefer "insight first, then details" organisation (e.g. per section) rather than chronological lists of details
+- Use common threads that run throughout a story and that guide readers through
+- Convey clear points that can be remembered by readers after reading a story
+- Prefer conciseness, avoid repetition
+- Be very consistent with terminology (e.g. use the same terms for the same concepts throughout)
+
+### Writing process
+
+1. Start by defining the concepts that the story is about
+2. Settle on a precise terminology for these concepts
+3. Define the relations between the individual concepts (e.g. causatio, etc.)
+4. Gradually add content around the skeleton of concepts and their relations
 
 ## Story ideas
 
